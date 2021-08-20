@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CalTip</title>
+</head>
+<body>
+<div class="container">
+    <div class="head">
+        <h1>TIP CALCULATOR</h1>
+    </div>
+    <form>
+        <p><b>Bill Amount</b></p>
+        <input type="number" id="amount" placeholder="enter bill amount" maxlength="10">
+        <p><b>Tip Amount</b></p>
+        <select name="tip" id="tip">
+            <option value="0.05">5%</option>
+            <option value="0.1">10%</option>
+            <option value="0.15">15%</option>
+            <option value="0.2">20%</option>
+            <option value="0.25">25%</option>
+        </select>
+        <p><b>No. of People Sharing the Bill(If you are single then enter "1")</b></p>
+        <select id="numberPeople">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </select>
+    </form>
+    <button class="calc" onclick="calculateTip()">Calculate</button>
+    <div id="single">
+        <p><b>Tip : Rs <span id=tipAmount></span></b></p>
+        <p><b>Total : Rs <span id="billTotal"></span></b></p>
+    </div>
+    <div id="multiple">
+        <p><b>Tip Per Person: Rs. <span id="TipMultiple"></span></b></p>
+        <p><b>Total Tip : Rs <span id="tipMul"></span></b></p>
+        <p><b>Total Per Person: Rs.<span id="totalAmountEach"></span></b></p>
+        <p><b>Bill Total: Rs.<span id="billTotalMultiple"></span></b></p>
+    </div>
+</div>    
+<script src="js\brain.js"></script>
+</body>
+</html>
