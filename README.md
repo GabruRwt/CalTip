@@ -1,3 +1,3 @@
 # CalTip
 A tip Calculator using HTML,CSS AND JAVASCRIPT
-https://gabrurwt.github.io/CalTip/ 
+Click https://gabrurwt.github.io/CalTip/  to use the CalTip
